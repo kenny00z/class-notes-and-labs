@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float align Exercise</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 1.4em;
+        }
+
+        .container{
+            max-width: 95%;
+            margin: 25px;
+
+        }
+         
+        #box-1{
+            float:left;
+            width: 45%;
+        }
+
+        #box-2{
+            float: right;
+            width: 45%;
+            
+        }
+
+        .box {
+            border: solid 2px blueviolet;
+            padding: 15px;
+            background-color: antiquewhite;
+            
+            
+        }
+        .box p{
+            height: 400px;
+        }
+
+        .btnnoreal{
+            border: solid 1px rgb(28, 17, 39);
+            border-radius: 5px;
+            padding: 3px;
+            text-decoration: none;
+            background-color: aquamarine;
+            color:brown;
+
+        }
+
+        .btnreal{
+            border: solid 2px rgb(0, 0, 0);
+            border-radius: 5px;
+            margin-top: 20px;
+            background-color: chartreuse;
+            color:rgb(161, 39, 1);
+
+        }
+.btnreal:hover{
+    color:black;
+    background-color: white;
+}
+
+.abuelo ~ p {
+color:red;
+}
+
+.first-child p:first-child{
+    color: chartreuse;
+}
+
+.last-child p:last-child{
+    color:crimson;
+}
+
+.child-nth-num p:nth-child(3) {
+color: aqua;
+text-decoration: underline;
+}
+
+.child-nth-odd p:nth-child(odd){
+    color: blueviolet;
+    border: solid 1px blue;
+    border-radius: 4px;
+}
+
+.typeof-first p:first-of-type {
+    color: darkorange;
+}
+
+.typeof-last p:last-of-type {
+    color: darkgreen;
+}
+
+
+       
+
+
+    </style>
+</head>
+
+
+
+
+<body>
+    <header>
+        <h1>Ejercicio "Float & Align"</h1>
+     </header>
+
+        <section class="container">
+
+<div class="box" id="box-1">
+    
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veritatis suscipit blanditiis id animi reiciendis, ut nam enim illum perspiciatis nisi in ipsam eligendi quod dolorem ex eaque! Quasi, optio!
+</p>
+<div><a href="#" class="btnnoreal">Boton no real :)</a></div>
+</div>
+
+
+<div class="box" id="box-2">
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem vel velit laudantium recusandae tempora temporibus fugiat, aliquam tempore cupiditate expedita maiores, atque eum sit suscipit, explicabo eligendi provident distinctio voluptates.</p>
+    <div><a href="#" class="btnnoreal">Boton no real 2 :)</a></div>
+</div>
+
+        </section>
+<div>
+
+    <button class="btnreal">Boton real</button>
+
+    <div class="first-child">
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+    </div>
+    <hr>
+    <div class="last-child">
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+    </div>
+    <hr>
+    <div class="child-nth-num">
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+    </div>
+    <hr>
+    <div class="child-nth-odd">
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+    </div>
+    <hr>
+    <div class="typeof-first">
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+    </div>
+    <hr>
+    <div class="typeof-last">
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+        <p>Hola que tu haces?, aquí muriendo un poco cerebralmente.</p>
+    </div>
+    <hr>
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+
+   <div class="abuelo">
+    <h3>Prueba abuelo1</h3>
+    <p>Prueba  abuelo2</p>
+    <p>Prueba  abuelo3</p>
+    <div class="padre">
+        <h3>Prueba Padre</h3>
+        <p>Padre</p>
+        <div class="hijo">
+            <h3>Prueba hijo</h3>
+            <p>hijo</p>
+        </div>
+    </div>
+   </div>
+    
+</body>
+</html>
