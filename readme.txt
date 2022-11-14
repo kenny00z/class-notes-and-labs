@@ -52,7 +52,10 @@ Propiedades de texto[04-text-properties.html]: Propiedades aplicables a los esti
 
 Colores[05-Colors.html]: Maneras de aplicar propiedades de colores a nuestros elementos ya sea texto, bordes, backgrounds y demás clasificados en tres tipos, "a pelo" ej; color:red; color:blue; etc, la manera hexadecimal ej; color: #4b3b3b;, y el sistema RGB (Red,Green,Blue) ej; color: rgba(48, 56, 175, ); (insertar explicación).
 
-....... CONTINUAR EN TIEMPO LIBRE......
+Bordes y backgrounds[06-borders-background.html]: Tags y propiedades para aplicar borders & backgrounds; los bordes tienen 3 propiedades, una que indica el ancho de este en píxeles, tipo de borde indicada por ejemplo como solid u otras más y el color que se puede determinar de las maneras ya vistas con anterioridad rgb etc. Para backgrounds tenemos las propiedades por ejemplo de color tamaño que ocupa y demás haciendo así que nuestros bordes ocupen por ejemplo la totalidad del bloque al que ha sido asginado como por ejemplo , (background-size:cover;) tenemos mñas propiedades para que nuestro borde se ajuste al estilo que buscamos ya sea simple color o sean imagenes.
+
+Box Model[07-box-model.html]: Muy interesante siendo esta una propiedad con la que podemos modificar distintos tipos de inline-elements creando un espacio de box, determinando sus propiedades de tamaño.
+
 
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
