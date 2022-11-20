@@ -56,8 +56,14 @@ Bordes y backgrounds[06-borders-background.html]: Tags y propiedades para aplica
 
 Box Model[07-box-model.html]: Muy interesante siendo esta una propiedad con la que podemos modificar distintos tipos de inline-elements creando un espacio de box, determinando sus propiedades de tamaño.
 
+Alinear con Float[08-float-align.html]: Maneras de situar mover y alinear con las propiedades de float.
+
+Links y botones[09-links-buttons.hmtl]: Tag para crear botones y como estilarlos en css con las propiedades pertinentes.
+
+Estilo de menus[10-menu-styling]:
 
 
+ACABAR ESTA TARDE 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 
 
