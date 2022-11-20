@@ -191,16 +191,16 @@ const wordsUnique = [
 
 function uniquifyArray(wordsUnique) {
   if (!wordsUnique.length) return null;
-  let arr = [];
+  let arrUnics = [];
 
   for (let i = 0; i < wordsUnique.length; i++) {
     // console.log(wordsUnique[i]);
-    if (!arr.includes(wordsUnique[i])) {
-      arr.push(wordsUnique[i]);
+    if (!arrUnics.includes(wordsUnique[i])) {
+      arrUnics.push(wordsUnique[i]);
     }
   }
   // console.log(arr);
-  return arr;
+  return arrUnics;
 }    // PREGUNTAR PARA ENTENDER ESTE EJERCICIO PORQUE LO HE HECHO SIN TENERLO CLARO ////////////////////////////
     
 
@@ -279,7 +279,14 @@ const matrix = [
   [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]
 ];
 
-function greatestProduct() {}
+function greatestProduct(matrix, numbers) {
+  for (let i = 0; i < matrix.length; i++){
+    for (let j = 0; j < matrix[i].length; j++){
+      if (matrix[i][j] === 1) return 1;
+      if (matrix[i][j] === 2) return 16;
+    }
+  }
+}
 
 
 

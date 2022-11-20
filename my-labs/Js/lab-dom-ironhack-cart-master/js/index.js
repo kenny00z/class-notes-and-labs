@@ -55,30 +55,62 @@ function removeProduct(event) {
 // ITERATION 5
 
 function createProduct() {
+
+  //PARTE 1
   const createRow = document.querySelector(".create-product");
-  let newProdNameInput;
-  let newProdNameValue;
-  let newProdPriceInput;
-  let newProdPriceValue;
-  //... your code goes here -REVISAR DE DIEGO'S REPO-
+  let newProdNameInput = createRow.querySelector('input');
+  let newProdNameValue = newProdNameInput.value;
+  let newProdPriceInput = createRow.querySelector("input[type='number']");
+  let newProdPriceValue = Number(newProdPriceInput.valueAsNumber).toFixed(2);
+
+//PARTE 2
+const newTableRow = document.createElement('tr');
+  newTableRow.className = 'product';
+  newTableRow.innerHTML = `
+        <td class="name">
+        <span>${newProdNameValue}</span>
+      </td>
+      <td class="price">$<span>${newProdPriceValue}</span></td>
+      <td class="quantity">
+        <input type="number" value="0" min="0" placeholder="Quantity" />
+      </td>
+      <td class="subtotal">$<span>0</span></td>
+      <td class="action">
+        <button class="btn btn-remove">Remove</button>
+      </td>
+    `;
+
+      //PARTE 3
+
+  // coger el padre de los rows mediante un poco de DOM
+  const parent = document.querySelector('#cart tbody');
+
+  // Adjuntar la variable newTableRow dentro de parent :)
+  parent.appendChild(newTableRow);
+
+  // Recibir logica de botones
+  const removeBtn = newTableRow.querySelector('.btn-remove');
+  removeBtn.addEventListener('click', removeProduct);
+
+  // Limpiar los inputs una vez el usaurio haya creado un producto
+  newProdNameInput.value = '';
+  newProdPriceInput.value = 0;
+  
 }
 
 window.addEventListener('load', () => {
   const calculatePricesBtn = document.getElementById('calculate');
   calculatePricesBtn.addEventListener('click', calculateAll);
 
-  //... your code goes here
+  //... DOM PARA BORRAR PRODUCTOS
   const removeButtons = document.querySelectorAll(".btn-remove");
 
   removeButtons.forEach(button => button.addEventListener("click", removeProduct));
 
 
-  // PARA CREAR PRODUCTOS
-  const createBtn = document.querySelector("#create");
+  //  DOM PARA CREAR PRODUCTOS
+  const createBtn = document.querySelector('#create');
   if (createBtn) {
-    createBtn.addEventListener("click", createProduct);
+    createBtn.addEventListener('click', createProduct);
   }
-
-  
-
 });
