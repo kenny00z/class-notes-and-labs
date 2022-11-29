@@ -63,8 +63,20 @@ Links y botones[09-links-buttons.hmtl]: Tag para crear botones y como estilarlos
 Estilo de menus[10-menu-styling]:
 
 
-ACABAR ESTA TARDE 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+ACABAR ESTA TARDE ( PERO DE VERDAD )
+
+
+
+
+
+((([[[---MID TERM PROJECT WEEK---]]])))
+
+
+
+
+[VUE]
+
+My First Component -- Crear COMPONENTES; tipos de variable dentro del script segun el metodo de la libreria de Vue , {ref , reactive} ref(); se utilizaz para datos primivitos (que van solos o que no forman parte de nada más) mientras que el método reactive(); se aplica a aquellos datos no primitivos como por ejemplo; objetos, arrays , arrays de objetos etc.., estos métodos permiten trabajar con estas variables dentro del html de una manera reactiva .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 
 
