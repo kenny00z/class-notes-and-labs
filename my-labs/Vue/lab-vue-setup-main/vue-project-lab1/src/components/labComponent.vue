@@ -1,3 +1,4 @@
+<!-- ITERATION #1 & #2 -->
 <template>
     <div>
         <h2>Hello there, I'm {{name}} and I'm an {{status}}!</h2>
